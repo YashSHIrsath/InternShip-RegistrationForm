@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesignup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo" ><img src="assets/YashShirsath-logo.png" alt=""></div>
+        <div class="details">Enter Your Account Details</div>
+        <div class="registrationInfo"  >
+            <form  name="myForm" onsubmit="return validateForm()" >
+                <div class="name" id="name">
+                    <input type="text" name="fname" id="namelabel" required>
+                    <label for="name" id="names">First Name</label>
+                    <span class="formerror"></span>
+                </div>
+
+                <div class="lname" id="lname">
+                    <input type="text" name="flname" id="lnamelabel" required>
+                    <label for="lnamelabel" id="lnames">Last Name</label>
+                    <span class="formerror"></span>
+                </div>
+
+                <div class="month" id="month">
+                    <input type="date" name="fdatetime" id="datetimelabel"  required>
+                    <label for="datetimelabel" id="datetimes">DOB <span style="font-size: 10px;">(Click on calender icon)</span></label>
+                    <span class="formerror"></span>
+                </div>
+
+                <div class="email" id="email">
+                    <input type="email" name="femail" id="emaillabel" required>
+                    <label for="emaillabel" id="mail">Email Address</label>
+                    <span class="formerror"></span>
+                </div>
+
+                <div class="password" id="password">
+                    
+                    <input type="password" name="fpassword" id="passwordlabel" required>
+                    <label for="passwordlabel">Password</label>
+                    <span class="formerror"></span>
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="checkbox">
+                    <label for="checkbox">Yes,I Want Product Update Through My Given Email</a></label>
+                </div>
+                
+                <input type="submit" class="login" value="LOGIN">
+            </form>
+            
+            <div class="or">OR</div>
+
+            <div class="logos">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon class="google" name="logo-google"></ion-icon>
+                <ion-icon class="apple" name="logo-apple"></ion-icon>
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+
+            <div class="create">
+                Already have a account?<a href="Login.html">Login</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="script2.js"></script>
+</html>

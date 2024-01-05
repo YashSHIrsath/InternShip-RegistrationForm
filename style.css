@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+    background: url(assets/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg);
+    backdrop-filter: blur(30px);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    width: 100%;
+    height: 80vh;
+    background :url(assets/sarah-dorweiler-9Z1KRIfpBTM-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: none;
+    
+    
+}
+
+.navbar{
+    background:transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    height: 5%;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar ul li{
+    list-style: none;
+    
+}
+.navbar ul li a{
+    font-weight: 700;
+    color: #2f3132;
+    padding: 10px 20px;
+    transition: 0.5s;
+    border-radius: 25px;
+    margin: 0px 5px;
+}
+.navbar ul li :hover{
+    background-color: #fff;
+}
+.container .navbar .logo img{
+    width: 200px;
+}
+
+.icons ion-icon{
+    margin: 0px 15px;
+}
+
+.account{
+    width: 100%;
+    height: 70%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin: 0px 15px;
+}
+
+.account h1{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.choice{
+    display: inline-flex;
+}
+.choice .button:nth-child(1){
+   font-size: 16px;
+   padding: 10px 30px;
+   background-color: #2f3132;
+   border: #2f3132 2px solid;
+   margin: 15px 10px;
+   transition: 0.5s;
+}
+
+.choice .button a{
+   text-decoration: none;
+   color: aliceblue;
+   transition: 0.5s;
+}
+
+.choice .button:nth-child(2){
+    background-color: transparent;
+    border: #2f3132 2px solid;
+    transition: 0.5s;
+    font-size: 16px;
+    padding: 10px 30px;
+    margin: 15px 10px;
+    backdrop-filter: blur(20px);
+}
+
+.choice .button:nth-child(2) a {
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.choice .button:nth-child(2):hover{
+    background-color:#2f3132; 
+    border: transparent 2px solid; 
+}
+.choice .button:nth-child(2):hover a{
+    color:white;  
+}
+
+.choice .button:nth-child(1):hover{
+    background-color: transparent;
+    
+    color: #d8e5ec;
+    border: #2f3132 2px solid;
+}
+.choice .button:nth-child(1):hover a{
+    color: #afbbc1;
+}
+#threelines{
+    position: absolute;
+    right: -2000;
+    display: none;
+}
+#cross{
+    position: absolute;
+    right: -2000;
+    display: none;
+}
+.container #sidebar{
+    position: absolute;
+    top: 20%;
+    right: 30px;
+    list-style: none;
+    display: none;
+}
+
+@media only screen and (max-width: 900px){
+    .container .navbar ul,.icons{
+        display: none;
+    }
+
+    .container #sidebar{
+        
+        display: block;
+        transform: translateX(200px);
+        z-index: 10;
+        transition: 0.5s;
+    }
+
+    .container .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 30px;
+        
+    }
+
+    #cross{
+        display:none;
+        position: absolute;
+        right: 0;
+        margin: 0px 20px;
+        transition: 0.5s;
+    }
+
+    #threelines{
+        display:block;
+        position: absolute;
+        right: 0;
+        margin: 0px 20px;
+        transition: 0.5s;
+    }
+}

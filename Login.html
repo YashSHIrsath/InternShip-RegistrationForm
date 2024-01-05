@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylelogin.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo" ><img src="assets/YashShirsath-logo.png" alt=""></div>
+        <div class="details">Enter Your Account Details</div>
+        <div class="registrationInfo"  >
+            <form  name="myForm" onsubmit="return validateForm()" >
+                <div class="email" id="email">
+                    <input type="email" name="femail" id="emaillabel" required>
+                    <label for="emaillabel" id="mail">Email Address</label>
+                    <span class="formerror"></span>
+                </div>
+
+                <div class="password" id="password">
+                    
+                    <input type="password" name="fpassword" id="passwordlabel" required>
+                    <label for="passwordlabel">Password</label>
+                    <span class="formerror"></span>
+                </div>
+
+                <div class="forgotPassword">
+                    <a>Forgot Password?</a>
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" name="" id="checkbox">
+                    <label for="checkbox">I Comply With The Company's <a href="">Terms</a> And <a href="">Conditions</a></label>
+                </div>
+                
+                <input type="submit" class="login" value="LOGIN">
+            </form>
+            
+            <div class="or">OR</div>
+
+            <div class="logos">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon class="google" name="logo-google"></ion-icon>
+                <ion-icon class="apple" name="logo-apple"></ion-icon>
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+
+            <div class="create">
+                <a href="signUp.html">CREATE AN ACCOUNT</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>
